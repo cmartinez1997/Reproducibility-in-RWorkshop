@@ -28,6 +28,8 @@ gap_big <- filter(gapminder, pop > 10000000)
 
 write_csv(gap_1980s, "data/processed_data/gapminder_1980s.csv")
 
-write_rds(gap_1980s, "data/processed_data/gapminder_1980s.rds")
-# can save any r object as an rds
+#write_rds(gap_1980s, "data/processed_data/gapminder_1980s.rds")
+# can save any r object as an rds when hgelpful
+
+print('hello!')
 
