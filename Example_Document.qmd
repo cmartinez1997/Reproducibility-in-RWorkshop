@@ -2,11 +2,26 @@
 title: "Example Document"
 author: "Cecilia Martinez"
 format: html
+bibliography: references.bib
 ---
 
 ## Quarto
 
+::: {.callout-caution appearance="simple"}
+## under construction
+
 Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+:::
+
+![Grace Adams (undergraduate student) working on mounting Douglas-fir tree cores from the Pacific Northwest](images/RISE-Photo4.jpg)
+
+## Adding Tables
+
+| Col1 | Col2 | Col3 |
+|------|------|------|
+|      |      |      |
+|      |      |      |
+|      |      |      |
 
 ## Running Code
 
@@ -24,3 +39,25 @@ You can add options to executable code like this
 ```
 
 The `echo: false` option disables the printing of code (only output is displayed).
+
+## Adding Citations
+
+According to[@amburgey2018], stuff
+
+Can add csl files for formatting references --\> can add it to YAML, need csl file, look in header for reference
+
+Section about documentation and notation
+
+![]()
+
+```{r}
+
+#| lavel: fig-cars-points
+#| fig-cap: "a plot of weight vs miles per gallon"
+library(ggplot2)
+p <- ggplot(mtcars, aes(wt, mpg))
+p + geom_point()
+
+```
+
+@fig-cars-points
